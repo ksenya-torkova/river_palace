@@ -395,7 +395,7 @@ template {
 }
 @font-face {
   font-family: 'lato';
-  src: url('../fonts/') format('woff2'), url('../fonts/') format('woff'), url('../fonts/lato_regular.ttf') format('truetype');
+  src: url('../fonts/lato_regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -458,6 +458,8 @@ body {
   color: #1b1617;
   margin: 0;
   padding: 0;
+  font-family: 'agoraslabpro', 'Times New Roman', serif;
+  font-weight: 400;
 }
 img {
   max-width: 100%;
@@ -473,6 +475,8 @@ img {
   width: 980px;
   padding-left: 10px;
   padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
@@ -482,8 +486,8 @@ img {
 .main-header::before {
   position: absolute;
   content: '';
-  left: -200px;
-  top: -300px;
+  left: -92px;
+  top: -218px;
   width: 713px;
   height: 713px;
   background-color: #1ea2f3;
@@ -492,10 +496,115 @@ img {
 .main-header__container {
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  z-index: 1;
+  margin-left: 28px;
+  margin-top: 27px;
 }
 .logo {
   display: inline-block;
   vertical-align: top;
   position: relative;
   z-index: 1;
+  margin-top: 18px;
+}
+.contacts {
+  padding-left: 137px;
+}
+.contacts__type {
+  display: inline-block;
+  vertical-align: top;
+  color: #000000;
+  font-family: 'lato';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  position: relative;
+}
+.contacts__type::after {
+  position: absolute;
+  content: '';
+  background-color: inherit;
+}
+.contacts__type--grey {
+  background-color: #e3eff6;
+}
+.contacts__type--blue {
+  background-color: #e3eff6;
+}
+.contacts__phone {
+  text-decoration: none;
+  font-family: 'lato';
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav-list__link {
+  text-decoration: none;
+  color: #656565;
+  border-bottom: 1px solid rgba(175, 175, 175, 0.32);
+  font-weight: 700;
+}
+.nav-list__link--white {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+}
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+.slides {
+  position: relative;
+  z-index: 1;
+  margin-left: 191px;
+}
+.slides__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slides__item {
+  padding-left: 600px;
+  background-repeat: no-repeat;
+  min-height: 426px;
+}
+.slides__item--supper {
+  background-image: url('../img/supper-bg.png');
+}
+.slides__item--corporative {
+  display: none;
+}
+.slides__item--new-year {
+  display: none;
+}
+.slides__item--wedding {
+  display: none;
+}
+.slides__item--cruise {
+  display: none;
+}
+.slides__img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+.slides__img--supper-1 {
+  background-image: url('../img/supper-1.png');
+}
+.slides__img--supper-2 {
+  background-image: url('../img/supper-2.png');
+}
+.slides__img--supper-3 {
+  background-image: url('../img/supper-3.png');
 }
