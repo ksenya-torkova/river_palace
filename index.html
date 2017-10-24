@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.svg" type="image/svg">
     <link href="css/style.min.css" rel="stylesheet">
     <title>River palace</title>
   </head>
@@ -12,18 +13,18 @@
     <div class="wrapper">
       <header class="main-header">
         <div class="container">
-          <div class="logo">
+          <div class="logo  logo--absolute">
             <a>
               <img src="img/logo.svg" alt="River palace" width="158" height="147">
             </a>
           </div>
           <div class="main-header__container">
             <div class="contacts">
-              <span class="contacts__type  contacts__type--grey">Билеты</span>
+              <span class="contacts__type">Билеты</span>
+              <a href="tel:+74955329778" class="contacts__phone  contacts__phone--indent">+7 (495) 532 97 78</a>
+              <span class="contacts__type">Аренда</span>
               <a href="tel:+74955329778" class="contacts__phone">+7 (495) 532 97 78</a>
-              <span class="contacts__type  contacts__type--blue">Аренда</span>
-              <a href="tel:+74955329778" class="contacts__phone">+7 (495) 532 97 78</a>
-              <a href="#" class="contacts__link  btn  btn--blue">Заказать звонок</a>
+              <a href="#" class="contacts__link  btn  btn--arial  btn--red">Заказать звонок</a>
             </div>
             <nav class="main-header__nav">
               <ul class="nav-list">
@@ -62,9 +63,9 @@
                   <span class="slides__img  slides__img--supper-3"></span>
                 </div>
                 <h2 class="slides__title">Ужин на теплоходе</h2>
-                <div class="slides__order">
-                  <a href="#" class="slides__link  btn  btn--blue">Купить билет</a>
-                  <a href="#" class="slides__link  btn  btn--blue">Заказать банкет</a>
+                <div class="slides__order  slides__order--indent">
+                  <a href="#" class="btn  btn--big  btn--blue">Купить билет</a>
+                  <a href="#" class="btn  btn--big  btn--blue">Заказать банкет</a>
                 </div>
               </li>
               <li class="slides__item  slides__item--corporative">
@@ -74,8 +75,8 @@
                   <span class="slides__img  slides__img--corporative-3"></span>
                 </div>
                 <h2 class="slides__title">Корпоративы</h2>
-                <div class="slides__order">
-                  <a href="#" class="slides__link  btn  btn--blue">Заказать банкет</a>
+                <div class="slides__order  slides__order--indent">
+                  <a href="#" class="slides__link  btn  btn--big  btn--blue">Заказать банкет</a>
                 </div>
               </li>
               <li class="slides__item  slides__item--new-year">
@@ -86,7 +87,7 @@
                 </div>
                 <h2 class="slides__title">Предновогодние корпоративы</h2>
                 <div class="slides__order">
-                  <a href="#" class="slides__link  btn  btn--blue">Заказать банкет</a>
+                  <a href="#" class="slides__link  btn  btn--big  btn--blue">Заказать банкет</a>
                 </div>
               </li>
               <li class="slides__item  slides__item--wedding">
@@ -97,7 +98,7 @@
                 </div>
                 <h2 class="slides__title">Незабываемая свадьба на теплоходе</h2>
                 <div class="slides__order">
-                  <a href="#" class="slides__link  btn  btn--blue">Заказать банкет</a>
+                  <a href="#" class="slides__link  btn  btn--big  btn--blue">Заказать банкет</a>
                 </div>
               </li>
               <li class="slides__item  slides__item--cruise">
@@ -108,60 +109,137 @@
                 </div>
                 <h2 class="slides__title">Прогулки на панорамной яхте по Москва-реке</h2>
                 <div class="slides__order">
-                  <a href="#" class="slides__link  btn  btn--blue">Заказать банкет</a>
+                  <a href="#" class="slides__link  btn  btn--big  btn--blue">Заказать банкет</a>
                 </div>
               </li>
             </ul>
             <div class="slides__controls">
-              <span class="slides__control  slides__control--1"></span>
-              <span class="slides__control  slides__control--2"></span>
-              <span class="slides__control  slides__control--3"></span>
+              <span class="slides__control"></span>
+              <span class="slides__control"></span>
+              <span class="slides__control  slides__control--active"></span>
             </div>
           </div>
         </div>
       </header>
       <main class="content">
         <section class="rent">
-          <h1 class="title">Прогулки и аренда теплохода River Palace</h1>
-          <img src="img/vessel.png" alt="">
-          <ul class="rent__features">
-            <li class="rent__item">Мощные двигатели VOLVO Penta c электроснабжением до 380 кВт</li>
-            <li class="rent__item">Современная система кондиционирования</li>
-            <li class="rent__item">5 туалетных комнат для гостей, комфортная лаундж-комната и гардероб</li>
-            <li class="rent__item">На технической палубе расположен кухонный комплекс полного цикла</li>
+          <h1 class="title  title--width">Прогулки и аренда теплохода River Palace</h1>
+          <img src="img/vessel.png" class="rent__image" alt="Прогулки и аренда теплохода River Palace">
+          <ul class="rent__features  container">
+            <li class="rent__item  rent__item--motor">Мощные двигатели VOLVO Penta c электроснабжением до 380 кВт</li>
+            <li class="rent__item  rent__item--conditioner">Современная система кондиционирования</li>
+            <li class="rent__item rent__item--toilet">5 туалетных комнат для гостей, комфортная лаундж-комната <br>и гардероб</li>
+            <li class="rent__item  rent__item--kitchen">На технической палубе расположен кухонный комплекс полного цикла</li>
           </ul>
         </section>
-        <section class="cruise">
-          <h2 class="title">Речная прогулка по Москва реке</h2>
+        <section class="cruise  container">
+          <h2 class="title  title--indent">Речная прогулка по Москва реке</h2>
+          <div class="cruise__content">
+            <div class="cruise__wrapper">
+              <div class="cruise__order">
+                <img src="img/cruise-img.jpg" alt="Речная прогулка по Москва реке">
+                <a href="#" class="cruise__order-link  btn  btn--red">Купить билет</a>
+              </div>
+              <div class="cruise__description">
+                <h3 class="cruise__title">Прогулка на панорамной супер-яхте River Palace с&nbsp;обедом или ужином по центру Москвы</h3>
+                <span class="cruise__time">Ежедневно: 12:00, 16:00 19:00, 20:00</span>
+                <a href="#" class="cruise__link">Посмотреть расписание</a>
+                <p class="cruise__details">Билеты на прогулку с включенным питанием. Входной билет, два блюда, бокал вина и чай с десертом от 1500 р на человека. За 2700 р роскошное меню Бизнес класса!</p>
+                <p class="cruise__details  cruise__details--grey">Теплоход “Ривер Палас”. <br>От причала “Киевский вокзал”, м. Киевская <br>Продолжительность: 3 часа</p>
+              </div>
+              <div class="cruise__prices">
+                <span class="price  price--big  price--new">1550 руб</span>
+                <span class="price  price--old">1900 руб</span>
+                <p class="cruise__info">Дети до 5 лет бесплатно Дети 6-12 лет <b class="bold">350 руб</b> Взрослый от <b class="bold">700 руб</b></p>
+                <a href="#" class="cruise__link  cruise__link--uppercase">подробнее</a>
+              </div>
+            </div>
+            <div class="cruise__wrapper  cruise__wrapper--border">
+              <ul class="cruise__list">
+                <li class="cruise__item">
+                  <h4 class="cruise__subtitle  cruise__subtitle--indent">Прогулка без питания</h4>
+                  <span class="price  price--new">350 руб</span>
+                  <a href="#" class="cruise__link">Ознакомиться с предложением</a>
+                </li>
+                <li class="cruise__item">
+                  <h4 class="cruise__subtitle">Прогулка с питанием “Стандарт” </h4>
+                  <span class="cruise__item-detail  cruise__item-detail--standart">3 блюда 2 напитка</span>
+                  <span class="price  price--new">1500 руб</span>
+                  <a href="#" class="cruise__link">Ознакомиться с предложением</a>
+                </li>
+                <li class="cruise__item">
+                  <h4 class="cruise__subtitle">Прогулка с питанием “Бизнес класс”</h4>
+                  <span class="cruise__item-detail  cruise__item-detail--business">Большие порции <br>3 вида меню</span>
+                  <span class="price  price--new">2700 руб</span>
+                  <a href="#" class="cruise__link">Ознакомиться с предложением</a>
+                </li>
+                <li class="cruise__item">
+                  <h4 class="cruise__subtitle  cruise__subtitle--indent">VIP билет</h4>
+                  <span class="cruise__item-detail  cruise__item-detail--vip">Не ограниченное <br>меню</span>
+                  <span class="price  price--new">3000 руб</span>
+                  <a href="#" class="cruise__link">Ознакомиться с предложением</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
-        <section class="events">
+        <section class="events  container">
           <h2 class="title">Мероприятия</h2>
+          <div class="events__wrapper">
+            <div class="events__sections">
+              <img src="img/wedding-section.png" alt="свадьбы" class="events__image" width="309" height="130">
+              <h3 class="events__title">свадьбы</h3>
+            </div>
+            <div class="events__sections">
+              <img src="img/corporative-section.png" alt="корпоративы" class="events__image" width="309" height="130">
+              <h3 class="events__title">корпоративы</h3>
+            </div>
+            <div class="events__sections">
+              <img src="img/banquet-section.png" alt="банкеты" class="events__image" width="309" height="130">
+              <h3 class="events__title">банкеты</h3>
+            </div>
+            <div class="events__sections">
+              <img src="img/birthday-section.png" alt="дни рождения" class="events__image" width="309" height="130">
+              <h3 class="events__title">дни рождения</h3>
+            </div>
+            <div class="events__sections">
+              <img src="img/prom-section.png" alt="выпускные" class="events__image" width="309" height="130">
+              <h3 class="events__title">выпускные</h3>
+            </div>
+            <div class="events__sections">
+              <img src="img/teambuilding-section.png" alt="тимбилдинг" class="events__image" width="309" height="130">
+              <h3 class="events__title">тимбилдинг</h3>
+            </div>
+          </div>
         </section>
         <section class="route">
-          <h2 class="title">Маршрут</h2>
-          <img src="img/route.png" alt="">
+          <h2 class="route__title  title  container">Маршрут</h2>
+          <div class="route__links">
+            <a href="#" class="btn  btn--blue  btn--padding  route__link">Увеличить карту</a>
+            <a href="#" class="btn  btn--blue  btn--padding  route__link">Схема проезда</a>
+          </div>
+          <img src="img/route.png" alt="Маршрут" class="route__image">
         </section>
-        <section class="details">
+        <section class="details  container">
           <h2 class="subtitle">Двухпалубные судна длиной 77 метров, оснащены по последнему слову техники</h2>
         </section>
         <section class="photo">
-          <h2 class="title">Фотогралерея</h2>
+          <h2 class="title  container">Фотогралерея</h2>
         </section>
-        <section class="reviews">
+        <section class="reviews  container">
           <h2 class="title">Отзывы</h2>
         </section>
         <section class="menu">
-          <h2 class="title">Меню ресторана</h2>
+          <h2 class="title  container">Меню ресторана</h2>
         </section>
-        <section class="description">
+        <section class="description  container">
           <h2 class="title">SEO</h2>
-        </section>
-        <section class="">
-          <h2 class="title"></h2>
         </section>
       </main>
       <footer class="main-footer">
-        
+        <div class="container">
+          
+        </div>
       </footer>
     </div>
     
