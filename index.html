@@ -221,7 +221,7 @@
           <img src="img/route.png" alt="Маршрут" class="route__image">
         </section>
         <section class="details  container">
-          <div class="details__column">
+          <div class="details__column  details__column--wide">
             <h2 class="subtitle">Двухпалубные судна длиной 77 метров, оснащены по последнему слову техники</h2>
             <h3 class="details__title">Стоимость прогулки:</h3>
             <ul class="details__price">
@@ -230,14 +230,14 @@
               <li class="details__price-item">Посадка на яхту начинается за 30 минут до времени отправления и заканчивается за 5 минут до начала прогулки.</li>
             </ul>
           </div>
-          <div class="details__column">
+          <div class="details__column  details__column--middle">
             <h4 class="details__subtitle">2 супер яхты</h4>
             <p class="details__content"><b class="bold">Общая площадь 2000 м</b> По Вашему желанию лайнеры могут представлять собой как единую площадку для мероприятия, так и 2 раздельные площадки, не зависящие друг от друга</p>
             <h4 class="details__subtitle">1200 тонн водоизмещение</h4>
             <p class="details__content">Пол основных залов отделан бежевым мрамором, увешан 12 позалоченными люстрами из горного хрусталя. По бортам теплоходов панорамные окна из гнутого итальянского стекла.</p>
-            <a href="#" class="btn  btn--blue  details__link">Заказать банкет</a>
+            <a href="#" class="btn  btn--blue  btn--details  details__link">Заказать банкет</a>
           </div>
-          <div class="details__column">
+          <div class="details__column  details__column--narrow">
             <h4 class="details__subtitle">300 посадочных мест</h4>
             <p class="details__content"><b class="bold">фуршет до 500 гостей <br>главная палуба 1000 м2</b></p>
             <img src="img/details-img.png" alt="фуршет до 500 гостей главная палуба 1000 м2" class="details__image">
@@ -254,24 +254,18 @@
             <div class="photo__column">
               <div class="photo__container  photo__container--middle">
                 <img src="img/gallery-02.jpg" alt="Фотогралерея">
-              </div>
-              <div class="photo__container  photo__container--middle">
                 <img src="img/gallery-03.jpg" alt="Фотогралерея">
               </div>
             </div>
             <div class="photo__column">
               <div class="photo__container  photo__container--middle">
                 <img src="img/gallery-04.jpg" alt="Фотогралерея">
-              </div>
-              <div class="photo__container  photo__container--middle">
                 <img src="img/gallery-05.jpg" alt="Фотогралерея">
               </div>
             </div>
             <div class="photo__column">
               <div class="photo__container  photo__container--small">
                 <img src="img/gallery-06.jpg" alt="Фотогралерея">
-              </div>
-              <div class="photo__container  photo__container--small">
                 <img src="img/gallery-07.jpg" alt="Фотогралерея">
               </div>
             </div>
@@ -280,7 +274,7 @@
         <section class="reviews  container">
           <div class="reviews__wrapper">
             <h2 class="reviews__title  title">Отзывы</h2>
-            <a href="#" class="btn  btn--blue  reviews__link">Все отзывы</a>
+            <a href="#" class="btn  btn--blue  btn--reviews  reviews__link">Все отзывы</a>
           </div>
           <div class="reviews__list">
             <div class="review">
@@ -328,28 +322,42 @@
           </div>
         </section>
         <section class="menu">
-          <h2 class="title  container">Меню ресторана</h2>
-          <div class="menu__column">
-            <img src="img/menu-01.jpg" alt="Меню ресторана">
-          </div>
-          <div class="menu__column">
-            <img src="img/menu-02.jpg" alt="Меню ресторана">
-            <p>Концепция кухни ресторанного комплекса ориентируется на европейские и русские кулинарные традиции. Для ночных прогулок - легкое party меню.</p>
-          </div>
-          <div class="menu__column">
-            <img src="img/menu-03.jpg" alt="Меню ресторана">
-            <a href="#" class="btn  btn--blue">Смотреть меню</a>
-            <p>Рыбные деликатесы или коктель-мариньер, приготовленный под руководством шеф-повара из франции, добавят прогулке очарования морских путешествий. оформив заказ ресторана на банкет, вы заранее оговариваете меню, а наши повара готовы осуществить все ваши фантазии.</p>
+          <h2 class="title  menu__title  container">Меню ресторана</h2>
+          <div class="menu__wrapper">
+            <div class="menu__column  menu__column--wide">
+              <img src="img/menu-01.jpg" alt="Меню ресторана">
+            </div>
+            <div class="menu__column  menu__column--narrow">
+              <img src="img/menu-02.jpg" alt="Меню ресторана" class="menu__image">
+              <p class="menu__description">Концепция кухни ресторанного комплекса ориентируется на европейские и русские кулинарные традиции.</p>
+              <p class="menu__description">Для ночных прогулок - легкое party меню.</p>
+            </div>
+            <div class="menu__column  menu__column--middle">
+              <img src="img/menu-03.jpg" alt="Меню ресторана">
+              <a href="#" class="btn  btn--blue  btn--details  menu__link">Смотреть меню</a>
+              <p class="menu__text">Рыбные деликатесы или <br>коктель-мариньер, приготовленный под руководством шеф-повара из франции, добавят прогулке очарования морских путешествий. оформив заказ ресторана на банкет, вы заранее оговариваете меню, а наши повара готовы осуществить все ваши фантазии.</p>
+            </div>
           </div>
         </section>
-        <section class="description  container">
-          <h2 class="title">SEO</h2>
-          <p class="description__content">SEO Аренда парохода и проведение на нем дня рождения или юбилея – это отличная возможность насладиться красотами Москвы и достойно отдохнуть в кругу друзей и родственников. Также мы предлагаем: провести свадебное торжество или выездную регистрацию брака на воде; организовать корпоративное мероприятие, которое сближает коллектив и делает работу персонала еще более результативной и продуктивной; все условия для проведения семинаров и конференций; воспользоваться услугой аренды теплохода для VIP-мероприятий; провести выпускной вечер для школьников и студентов или любое другое мероприятие. Нами будет организована незабываемая свадьба на теплоходе, а также к вашим услугам, так называемые зеленые стоянки: зона отдыха Горки, Бухта радости, Маяк, Пирогово, Хвойный бор, Солнечная поляна. Итак, вы хотите организовать праздник или корпоратив на теплоходе. Смело обращайтесь в компанию Моспароходство - и ваша мечта станет реальностью. И заметьте, для этого не потребуются чрезмерные временные затраты.</p>
+        <section class="description">
+          <div class="container">
+            <h2 class="title  title--no-margin-bottom">SEO</h2>
+            <p class="description__content">Аренда парохода и проведение на нем дня рождения или юбилея – это отличная возможность насладиться красотами Москвы и достойно отдохнуть в кругу друзей и родственников. Также мы предлагаем:</p>
+            <ul class="description__list">
+              <li class="description__item">провести свадебное торжество или выездную регистрацию брака на воде;</li>
+              <li class="description__item">организовать корпоративное мероприятие, которое сближает коллектив и делает работу персонала еще более результативной и продуктивной;</li>
+              <li class="description__item">все условия для проведения семинаров и конференций;</li>
+              <li class="description__item">воспользоваться услугой аренды теплохода для VIP-мероприятий;</li>
+              <li class="description__item">провести выпускной вечер для школьников и студентов или любое другое мероприятие.</li>
+            </ul>
+            <p class="description__content">Нами будет организована незабываемая свадьба на теплоходе, а также к вашим услугам, так называемые зеленые стоянки: зона отдыха Горки, Бухта радости, Маяк, Пирогово, Хвойный бор, Солнечная поляна.</p>
+            <p class="description__content">Итак, вы хотите организовать праздник или корпоратив на теплоходе. Смело обращайтесь в компанию Моспароходство - и ваша мечта</p>
+          </div>
         </section>
       </main>
       <footer class="main-footer">
-        <div class="container">
-          <div class="logo">
+        <div class="main-footer__container  container">
+          <div class="logo  logo--footer">
             <a>
               <img src="img/logo.svg" alt="River palace" width="158" height="147">
             </a>
@@ -360,7 +368,7 @@
               <div class="main-footer__contacts  feedback">
                 <span class="feedback__mark">Есть вопросы? Звоните</span>
                 <a href="tel:74955329778" class="feedback__phone">+7 (495) 532 97 78</a>
-                <a href="#" class="btn  btn--red  btn--uppercase  feedback__link">Заказать звонок</a>
+                <a href="#" class="btn  btn--red  btn--arial  btn--uppercase  feedback__link">Заказать звонок</a>
               </div>
             </div>
             <div class="main-footer__row">
@@ -378,6 +386,5 @@
         </div>
       </footer>
     </div>
-    
   </body>
 </html>
