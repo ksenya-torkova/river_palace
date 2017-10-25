@@ -524,7 +524,7 @@ img {
   margin-top: 34px;
 }
 .contacts {
-  padding-left: 136px;
+  padding-left: 135px;
 }
 .contacts__type {
   display: inline-block;
@@ -856,7 +856,7 @@ img {
   margin-bottom: 30px;
 }
 .title--width {
-  max-width: 610px;
+  max-width: 612px;
   margin-left: 219px;
   margin-top: 13px;
 }
@@ -1046,6 +1046,11 @@ img {
   background-color: #d1dbe2;
   border-radius: 10px;
   margin-bottom: 14px;
+  text-decoration: none;
+  color: #1b1617;
+}
+.events__sections:hover {
+  text-decoration: underline;
 }
 .events__title {
   font-size: 15px;
@@ -1377,7 +1382,7 @@ img {
   font-family: 'arial', 'helvetica', sans-serif;
   font-size: 14px;
   color: #ffffff;
-  margin-right: 101px;
+  margin-right: 99px;
   margin-top: 6px;
 }
 .feedback__mark {
