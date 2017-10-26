@@ -12,7 +12,7 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <div class="container">
+        <div class="container  main-header__wrapper">
           <div class="logo  logo--absolute">
             <a>
               <img src="img/logo.svg" alt="River palace" width="158" height="147">
@@ -20,13 +20,18 @@
           </div>
           <div class="main-header__container">
             <div class="contacts">
-              <span class="contacts__type">Билеты</span>
-              <a href="tel:+74955329778" class="contacts__phone  contacts__phone--indent">+7 (495) 532 97 78</a>
-              <span class="contacts__type">Аренда</span>
-              <a href="tel:+74955329778" class="contacts__phone">+7 (495) 532 97 78</a>
-              <a href="#" class="contacts__link  btn  btn--arial  btn--red">Заказать звонок</a>
+              <div class="contacts__wrapper">
+                <span class="contacts__type">Билеты</span>
+                <a href="tel:+74955329778" class="contacts__phone  contacts__phone--indent">+7 (495) 532 97 78</a>
+                <span class="contacts__type">Аренда</span>
+                <a href="tel:+74955329778" class="contacts__phone">+7 (495) 532 97 78</a>
+                <a href="#" class="contacts__link  btn  btn--arial  btn--red">Заказать звонок</a>
+              </div>
             </div>
-            <nav class="main-header__nav">
+            <button class="main-header__nav-button  main-header__nav-button--open">
+              <span class="visually-hidden">открыть навигацию по сайту</span>
+            </button>
+            <nav class="main-header__nav  main-header__nav--closed">
               <ul class="nav-list">
                 <li class="nav-list__item">
                   <a href="#" class="nav-list__link  nav-list__link--white">Прогулки</a>
@@ -56,7 +61,7 @@
         <div class="main-header__slider">
           <div class="slides">
             <ul class="slides__list">
-              <li class="slides__item  slides__item--supper">
+              <li class="slides__item  slides__item--supper  slides__item--active">
                 <div class="slides__preview">
                   <span class="slides__img  slides__img--supper-1"></span>
                   <span class="slides__img  slides__img--supper-2"></span>
@@ -125,6 +130,7 @@
         <section class="rent">
           <h1 class="title  title--width">Прогулки и аренда теплохода River Palace</h1>
           <img src="img/vessel.png" class="rent__image" alt="Прогулки и аренда теплохода River Palace">
+          <img src="img/vessel-mobile.png" class="rent__image  rent__image--mobile" alt="Прогулки и аренда теплохода River Palace">
           <ul class="rent__features  container">
             <li class="rent__item  rent__item--motor">Мощные двигатели VOLVO Penta c электроснабжением до 380 кВт</li>
             <li class="rent__item  rent__item--conditioner">Современная система кондиционирования</li>
@@ -246,27 +252,31 @@
         <section class="photo">
           <h2 class="title  container">Фотогралерея</h2>
           <div class="photo__wrapper">
-            <div class="photo__column">
-              <div class="photo__container  photo__container--big">
-                <img src="img/gallery-01.jpg" alt="Фотогралерея">
+            <div class="photo__half-wrapper  photo__half-wrapper--width">
+              <div class="photo__column">
+                <div class="photo__container  photo__container--big">
+                  <img src="img/gallery-01.jpg" alt="Фотогралерея">
+                </div>
               </div>
             </div>
-            <div class="photo__column">
-              <div class="photo__container  photo__container--middle">
-                <img src="img/gallery-02.jpg" alt="Фотогралерея">
-                <img src="img/gallery-03.jpg" alt="Фотогралерея">
+            <div class="photo__half-wrapper  photo__half-wrapper--wrap">
+              <div class="photo__column">
+                <div class="photo__container  photo__container--middle">
+                  <img src="img/gallery-02.jpg" alt="Фотогралерея">
+                  <img src="img/gallery-03.jpg" alt="Фотогралерея">
+                </div>
               </div>
-            </div>
-            <div class="photo__column">
-              <div class="photo__container  photo__container--middle">
-                <img src="img/gallery-04.jpg" alt="Фотогралерея">
-                <img src="img/gallery-05.jpg" alt="Фотогралерея">
+              <div class="photo__column">
+                <div class="photo__container  photo__container--middle">
+                  <img src="img/gallery-04.jpg" alt="Фотогралерея">
+                  <img src="img/gallery-05.jpg" alt="Фотогралерея">
+                </div>
               </div>
-            </div>
-            <div class="photo__column">
-              <div class="photo__container  photo__container--small">
-                <img src="img/gallery-06.jpg" alt="Фотогралерея">
-                <img src="img/gallery-07.jpg" alt="Фотогралерея">
+              <div class="photo__column">
+                <div class="photo__container  photo__container--small">
+                  <img src="img/gallery-06.jpg" alt="Фотогралерея">
+                  <img src="img/gallery-07.jpg" alt="Фотогралерея">
+                </div>
               </div>
             </div>
           </div>
