@@ -523,6 +523,11 @@ input[type='radio'].visually-hidden {
 .main-header--corporate::before {
   left: 47px;
 }
+.main-header--wedding {
+  background-image: url(../img/wedding-bg.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
 .main-header__container {
   display: inline-block;
   vertical-align: top;
@@ -1593,6 +1598,10 @@ input[type='radio'].visually-hidden {
   max-width: 446px;
   margin-top: 9px;
 }
+.content__form {
+  margin-top: 39px;
+  margin-bottom: 93px;
+}
 .contacts-block {
   background-color: #eef3f6;
   width: 450px;
@@ -1882,6 +1891,56 @@ input[type='radio'].visually-hidden {
 }
 .scheme__img {
   margin-top: -113px;
+}
+.form {
+  border: 1px solid #ff5d42;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.form__column--narrow {
+  max-width: 330px;
+  margin-right: auto;
+}
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 9px;
+}
+.form__item--wide {
+  width: 542px;
+}
+.form__title {
+  margin-top: 0;
+}
+.label {
+  font-size: 15px;
+  font-weight: 500;
+}
+.input-text {
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #becad1;
+  border-radius: 0;
+  min-width: 1px;
+  width: 100%;
 }
 @media (max-width: 1420px) {
   .wrapper {
