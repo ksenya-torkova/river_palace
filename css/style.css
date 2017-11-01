@@ -627,6 +627,7 @@ input[type='radio'].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 15px;
+  cursor: pointer;
 }
 .btn:last-child {
   margin-right: 0;
@@ -1313,6 +1314,9 @@ input[type='radio'].visually-hidden {
 .reviews {
   padding-top: 25px;
 }
+.reviews--padding {
+  padding-top: 7px;
+}
 .reviews__title {
   margin-left: 0;
   margin-right: 0;
@@ -1551,6 +1555,10 @@ input[type='radio'].visually-hidden {
   margin-top: 94px;
   margin-bottom: 124px;
 }
+.intro__title--smaller {
+  margin-top: 116px;
+  margin-bottom: 146px;
+}
 .intro__subtitle {
   max-width: 400px;
 }
@@ -1571,8 +1579,22 @@ input[type='radio'].visually-hidden {
 .intro__column + .intro__column {
   margin-left: 45px;
 }
+.intro__column--narrow {
+  max-width: 248px;
+}
+.intro__column--middle {
+  max-width: 352px;
+}
+.intro__promo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #282828;
+  margin-top: 20px;
+  margin-bottom: 31px;
+}
 .intro__text {
-  margin-top: 9px;
+  margin-top: 7px;
+  margin-bottom: 8px;
 }
 .intro__promo-text {
   max-width: 404px;
@@ -1597,6 +1619,9 @@ input[type='radio'].visually-hidden {
 .inner-title--width {
   max-width: 315px;
 }
+.content--margin-top {
+  margin-top: 52px;
+}
 .content__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1611,6 +1636,12 @@ input[type='radio'].visually-hidden {
 .content__title {
   max-width: 330px;
 }
+.content__title--width {
+  max-width: 100%;
+}
+.content__title--padding {
+  padding-left: 38px;
+}
 .content__text {
   max-width: 446px;
   margin-top: 9px;
@@ -1618,6 +1649,33 @@ input[type='radio'].visually-hidden {
 .content__form {
   margin-top: 39px;
   margin-bottom: 93px;
+}
+.content__form--margin {
+  margin-top: 31px;
+  margin-bottom: 135px;
+}
+.content__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 11px;
+}
+.content__item {
+  padding-left: 33px;
+  position: relative;
+  margin-bottom: 7px;
+}
+.content__item:last-child {
+  margin-bottom: -11px;
+}
+.content__item::before {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 1px;
+  top: 9px;
+  left: 0;
+  background-color: #ff5d42;
 }
 .contacts-block {
   background-color: #eef3f6;
@@ -1657,7 +1715,7 @@ input[type='radio'].visually-hidden {
 }
 .contacts-block__btn {
   font-size: 16px;
-  width: 192px;
+  width: 175px;
   padding-top: 12px;
   padding-bottom: 14px;
 }
@@ -1691,8 +1749,14 @@ input[type='radio'].visually-hidden {
   margin-left: 39px;
   margin-top: 51px;
 }
+.images--margin-top {
+  margin-top: 18px;
+}
 .images__img {
   margin-bottom: 19px;
+}
+.images__img--margin-bottom {
+  margin-bottom: 6px;
 }
 .menu-block {
   margin-left: 40px;
@@ -1704,6 +1768,17 @@ input[type='radio'].visually-hidden {
   display: -ms-flexbox;
   display: flex;
 }
+.menu-block--wedding {
+  padding-left: 0;
+  padding-top: 35px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.menu-block__wrapper {
+  position: relative;
+  z-index: 1;
+}
 .menu-block__link {
   color: #282828;
   font-weight: 700;
@@ -1714,6 +1789,30 @@ input[type='radio'].visually-hidden {
   vertical-align: top;
   max-width: 194px;
   margin-top: 34px;
+}
+.menu-block__link--big {
+  font-size: 19px;
+  max-width: 100%;
+  width: 284px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.menu-block__link--big a {
+  color: #1ea2f3;
+  -webkit-text-decoration: underline solid #abd6f0;
+          text-decoration: underline solid #abd6f0;
+}
+.menu-block__note {
+  font-size: 14px;
+  max-width: 220px;
+  margin-top: 2px;
+  line-height: 14px;
+  color: #8b8b8b;
+}
+.menu-block__img {
+  margin-left: -32px;
+  height: 135px;
+  width: 225px;
 }
 .programm {
   display: -webkit-box;
@@ -1839,6 +1938,10 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
   background-position: 53% top;
 }
+.features--padding {
+  padding-top: 57px;
+  padding-bottom: 43px;
+}
 .features__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -1874,6 +1977,7 @@ input[type='radio'].visually-hidden {
 .features__text {
   display: inline-block;
   padding-top: 53px;
+  max-width: 239px;
 }
 .seating {
   background-color: #eef3f6;
@@ -1882,6 +1986,9 @@ input[type='radio'].visually-hidden {
           box-sizing: border-box;
   min-height: 339px;
   margin-bottom: 74px;
+}
+.seating--no-margin {
+  margin-bottom: 0;
 }
 .scheme__wrapper {
   display: -webkit-box;
@@ -2017,6 +2124,112 @@ input[type='radio'].visually-hidden {
 }
 .select::-ms-expand {
   display: none;
+}
+.menu-variants__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu-variants__title {
+  max-width: 422px;
+}
+.menu-variants__note {
+  font-size: 14px;
+  max-width: 422px;
+  color: #8b8b8b;
+  margin-top: 31px;
+}
+.menu-variants__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu-variants__item {
+  width: 311px;
+}
+.menu-variants__text {
+  margin-top: 21px;
+  max-width: 282px;
+}
+.wedding-organization {
+  margin-top: 34px;
+  margin-bottom: 59px;
+  padding-top: 1px;
+  padding-bottom: 62px;
+  background-image: url(../img/wedding-organization-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.wedding-organization__title {
+  font-size: 29px;
+  max-width: 212px;
+  margin-top: 60px;
+  margin-left: 75px;
+  line-height: 34px;
+}
+.wedding-organization__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.wedding-organization__item {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  color: #282828;
+  padding-left: 26px;
+  margin-bottom: 16px;
+  max-width: 262px;
+}
+.wedding-organization__item::before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 17px;
+  top: 1px;
+  left: 0;
+  background-image: url(../img/heart-sign.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sales-block {
+  margin-bottom: 44px;
+}
+.sales-block__title {
+  margin-bottom: 30px;
+}
+.sales-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sale__title {
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 171px;
+  margin-top: 16px;
+}
+.sale__title--narrow {
+  max-width: 125px;
+}
+.sale {
+  width: 212px;
 }
 @media (max-width: 1420px) {
   .wrapper {
