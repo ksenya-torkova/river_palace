@@ -3074,7 +3074,7 @@ input[type='radio'].visually-hidden {
   .btn--blue {
     margin-right: 0;
   }
-   + .btn--blue {
+  .btn--blue + .btn--blue {
     margin-top: 20px;
   }
   .slides__item {
