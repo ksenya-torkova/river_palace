@@ -2385,6 +2385,11 @@ input[type='radio'].visually-hidden {
     padding-left: 0;
   }
 }
+@media (max-width: 1240px) {
+  .main-header--wedding {
+    background-position: 50% top;
+  }
+}
 @media (max-width: 1100px) {
   .inner-title--underline::after {
     bottom: -20px;
@@ -2392,6 +2397,20 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 1040px) {
+  .sales-block__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro--margin-top {
+    margin-top: 55px;
+  }
+  .content__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content--margin-top {
+    margin-top: 20px;
+  }
   .programm__title {
     max-width: 100%;
   }
@@ -2512,7 +2531,8 @@ input[type='radio'].visually-hidden {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .main-header--corporate::before {
+  .main-header--corporate::before,
+  .main-header--wedding::before {
     width: 680px;
     height: 680px;
   }
@@ -2767,6 +2787,25 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 980px) {
+  .menu-variants__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-variants__item {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .events__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2810,6 +2849,58 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 880px) {
+  .sales-block__title {
+    text-align: center;
+  }
+  .sales-block__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sale {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .sale__title,
+  .sale__title--narrow {
+    max-width: 100%;
+  }
+  .menu-variants__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-variants__title {
+    width: 100%;
+    max-width: 100%;
+  }
+  .menu-variants__note {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .features--padding {
+    padding-top: 25px;
+  }
+  .content__title--padding {
+    padding-top: 30px;
+  }
+  .intro--margin-top {
+    margin-top: 0;
+  }
+  .main-header--wedding {
+    background-position: 65% top;
+  }
   .form {
     width: 100%;
   }
@@ -3076,6 +3167,28 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 720px) {
+  .sales-block {
+    margin-bottom: 30px;
+  }
+  .wedding-organization {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-position: left top;
+  }
+  .main-header--wedding {
+    background-image: none;
+  }
+  .intro__column--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro__img {
+    display: none;
+  }
+  .intro__promo {
+    margin-bottom: 5px;
+  }
   .main-header--corporate {
     background-image: none;
   }
@@ -3176,6 +3289,28 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 660px) {
+  .features {
+    padding-bottom: 35px;
+  }
+  .menu-variants__title {
+    margin-top: 0;
+  }
+  .menu-variants__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-variants__item {
+    width: 100%;
+    text-align: center;
+  }
+  .menu-variants__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    width: 90%;
+  }
   .contacts {
     width: 88%;
   }
@@ -3281,6 +3416,20 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 520px) {
+  .sale {
+    width: 100%;
+  }
+  .menu-block__wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .menu-block__note {
+    max-width: 100%;
+  }
+  .menu-block__img {
+    display: none;
+  }
   .form__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3365,6 +3514,29 @@ input[type='radio'].visually-hidden {
   }
 }
 @media (max-width: 440px) {
+  .wedding-organization__title {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .wedding-organization__list {
+    margin-left: 0;
+  }
+  .features__item:nth-child(n+2) {
+    margin-top: -20px;
+  }
+  .features__img {
+    width: 120px;
+    height: 120px;
+  }
+  .subtitle--smaller {
+    font-size: 15px;
+  }
+  .intro__column--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .form {
     padding: 20px;
   }
